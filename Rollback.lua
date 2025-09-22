@@ -8,7 +8,7 @@
 
 -- However, a reasonable assumption can be made:
 -- 1. The "FirstName" is expected to exist and be valid. When the remote does not have it's data properly validated, it's possible for us to make it not exist (be null).
--- 2. The property not existing likely causes an error with the script responsible for loading all of your data. It is likely done in a protected call, or in a new thread (through a signal connection most likely), which prevents the script from being unable to process other players.
+-- 2. The property not existing likely causes an error with the script responsible for loading all of your data. It is likely done in a protected call, or in a new thread (through a signal connection most likely), which prevents a situation where the script is unable to process other players.
 -- 3. Data that has been loaded (such as your money) will be unaffected, while anything that hasn't been loaded yet will never be loaded.
 -- 4. The same process of #2 will likely be repeated on disconnection in reverse (attempting to save, instead of load).
 -- While this is likely, it's not a fact, since the logic responsible for handling this data and the input of sendData is unknown.
