@@ -9,6 +9,8 @@
 -- This is a much better and undetected way - simply hook "IsStudio" function from RunService, check if "loadHandler" has called it, and return true.
 
 
+-- It's recommended to put this script in your auto execute folder ("autoexe", "AutoExec", etc). Contact support for whatever executor you are using (Wave, Seliware, etc) if you don't know how.
+-- Additionally, you can just execute this manually while loading in.
 
 local RF = cloneref(game:GetService("ReplicatedFirst"))
 local Players = cloneref(game:GetService("Players"))
