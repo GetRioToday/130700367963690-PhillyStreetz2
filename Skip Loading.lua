@@ -2,7 +2,7 @@
 -- This script can possibly be detected due to the game having a secret key / offset passed to the "whitney" remote.
 -- In the past, Philly has changed this secret key before to try and detect "Instant Respawn".
 -- They have also changed the remotes name and created a decoy remote with the old name, meaning if you tried to fire the remote by it's old name, you got detected.
--- At the time of writing (2025/2/12), the script is currently undetected.
+-- At the time of writing (2025/12/2), the script is currently undetected.
 
 -- HERE'S A BETTER, AND FULLY UNDETECTED METHOD INSTEAD:
 -- Their loadHandler script has an "Is Roblox Studio" check inside of it, so that way the game developers can skip the loading screen while coding.
