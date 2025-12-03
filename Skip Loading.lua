@@ -37,8 +37,8 @@ if game.GameId == 130700367963690 then
 	if LoaderGui then
 		LoaderGui:Destroy()
 	end
-end
 
-local SpawnRemote = SharedStorage:WaitForChild(REMOTE_NAME)
-SpawnRemote:FireServer(REMOTE_OFFSET)
-StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.All, true)
+	local SpawnRemote = SharedStorage:WaitForChild(REMOTE_NAME)
+	SpawnRemote:FireServer(REMOTE_OFFSET)
+	StarterGui:SetCoreGuiEnabled(Enum.CoreGuiType.All, true)
+end
