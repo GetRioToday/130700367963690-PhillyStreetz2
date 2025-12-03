@@ -10,30 +10,33 @@
 
 
 -- It's recommended to put this script in your auto execute folder ("autoexe", "AutoExec", etc). Contact support for whatever executor you are using (Wave, Seliware, etc) if you don't know how.
--- Additionally, you can just execute this manually while loading in.
+-- Alternatively, you can just execute this manually while loading in.
 
-local RF = cloneref(game:GetService("ReplicatedFirst"))
-local Players = cloneref(game:GetService("Players"))
-local SharedStorage = cloneref(game:GetService("ReplicatedStorage"))
-local StarterGui = cloneref(game:GetService("StarterGui"))
 
-local REMOTE_NAME = "whitney";
-local REMOTE_OFFSET = 543439;
-
-local LoadHandler = RF:WaitForChild("loadHandler")
-LoadHandler:Destroy()
-
-local LocalClient = Players.LocalPlayer;
-while not LocalClient do
-	Players.PlayerAdded:Wait()
-	LocalClient = Players.LocalPlayer;
-end
-
-local PlayerGui = LocalClient:WaitForChild("PlayerGui")
-local LoaderGui = PlayerGui:FindFirstChild("LoadingGUI")
-
-if LoaderGui then
-	LoaderGui:Destroy()
+if game.GameId == 130700367963690 then
+	local RF = cloneref(game:GetService("ReplicatedFirst"))
+	local Players = cloneref(game:GetService("Players"))
+	local SharedStorage = cloneref(game:GetService("ReplicatedStorage"))
+	local StarterGui = cloneref(game:GetService("StarterGui"))
+	
+	local REMOTE_NAME = "whitney";
+	local REMOTE_OFFSET = 543439;
+	
+	local LoadHandler = RF:WaitForChild("loadHandler")
+	LoadHandler:Destroy()
+	
+	local LocalClient = Players.LocalPlayer;
+	while not LocalClient do
+		Players.PlayerAdded:Wait()
+		LocalClient = Players.LocalPlayer;
+	end
+	
+	local PlayerGui = LocalClient:WaitForChild("PlayerGui")
+	local LoaderGui = PlayerGui:FindFirstChild("LoadingGUI")
+	
+	if LoaderGui then
+		LoaderGui:Destroy()
+	end
 end
 
 local SpawnRemote = SharedStorage:WaitForChild(REMOTE_NAME)
