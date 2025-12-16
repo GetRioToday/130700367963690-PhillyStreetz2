@@ -13,7 +13,7 @@
 -- Alternatively, you can just execute this manually while loading in.
 
 
-if game.GameId == 130700367963690 then
+if game.GameId == 6858584271 then
 	local RF = cloneref(game:GetService("ReplicatedFirst"))
 	local Players = cloneref(game:GetService("Players"))
 	local SharedStorage = cloneref(game:GetService("ReplicatedStorage"))
