@@ -14,4 +14,4 @@ https://www.roblox.com/games/130700367963690/BIG-UPDATE-Philly-Streetz-2
 ⚠️ Globals/utility functions are not provided and must be implemented yourself.
 
 # Notice
-Please respect the license (AGPL-3.0 license). You're allowed to use, modify, and even sell as long as you comply with this license. It is the unfortunate reality that most people using Luau "cheat/hack" code are anywhere aged 12 to 22 who simply seek to steal & seek profit from public code, with blatant disrespect to the license & authors. Please don't do this. View the condition of the license here.
+Please respect the license (AGPL-3.0 license). You're allowed to use, modify, and even sell as long as you comply with this license. It is the unfortunate reality that most people using Luau "cheat/hack" code are anywhere aged 12 to 22 who simply seek to steal & seek profit from public code, with blatant disrespect to the license & authors. Please don't do this. View the condition of the license [here](LICENSE).
